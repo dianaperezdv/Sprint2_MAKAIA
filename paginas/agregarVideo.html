@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/formulario.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/index.html"> <img class="img-logo" src="Imagenes/logo.png" alt="Logo"></a>
+            <a href="/index.html"><h1>VideoTube</h1></a>
+        </div>
+
+        <div class="barra-busqueda">
+            <input type="text" class="texto-barra" placeholder="Buscar video">
+            <a href=""><img class="boton-buscar" src="Imagenes/search.png" alt=""></a>
+        </div>
+    </header>
+    <section class="contenedorForm">
+    <form id="form">
+        <label for="name">Titulo del video</label>
+        <input type="text" id="titulo" placeholder="Bacilos - Tabaco y Chanel">
+        <label for="canal">Canal</label>
+        <input type="text" id="canal" placeholder="Warner Media">
+        <label for="views" >Vistas y fecha de publicación del video</label>
+        <input type="text" id="views" placeholder="5.432.434 millones - 12 dic 2022">
+        </select>
+        <label for="miniatura">Ingrese la miniatura del video</label>
+        <input type="url" id="miniatura" placeholder="https://i.ytimg.com/vi/2W-KSOPWWBY/hq720_live_DuAtem9bi3CwFThz-bhfu6w.jpg">
+        <label for="link">Agregue el link del video</label>
+        <input type="url" id="link" placeholder="https://www.youtube.com/watch?v=UQCCwpiFEkI">
+        <label for="Descripción del video">Canal</label>
+        <input type="text" id="description" placeholder="En el video de hoy...">
+        <label for="categoria">Categoría del video</label>
+        <select name="" id="categoria">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="peliculas">Películas</option>
+            <option value="musica">Musica</option>
+            <option value="conferencia">Conferencias</option>
+        </select>
+        <button type="submit">Enviar información</button>
+    </form>
+</section>
+<script src="/agregarVideo.js" type="module"></script>
+</body>
+</html>
