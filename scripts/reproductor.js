@@ -22,9 +22,9 @@ const video = idVideo
     ? videosGuardados.find((vid) => vid.id === idVideo)
     : {};
 
-    document.getElementById('reproductor').src=video.link;
 
 //cambiar el texto
+document.getElementById('reproductor').src=video.link;
 
 const title = document.getElementById("reproductor_titulo");
 title.innerHTML = video.titulo;
@@ -44,7 +44,7 @@ const printVideos = (listaVideos, container) => {
         /*article.classList.add('main_videos');*/
         article.innerHTML = `
             <figure class="card_recomendados">
-            <img src=${"."+video.miniatura} alt="miniatura video" class="card_miniatura">
+            <img src=${video.miniatura} alt="miniatura video" class="card_miniatura">
             </figure>
             <section class="info_videos_sug">
             <h5 class="card_title">${video.titulo}</h5>
@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded',()=>{
 document.addEventListener("click", (event) => {
     const { target } = event;
     if(target.classList.contains("img-logo")){
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
     }
 });
 document.addEventListener("click",(event)=>{
     const {target} = event;
     if(target.classList.contains("card_miniatura")){
         sessionStorage.setItem("videoPlayer",JSON.stringify(target.id));
-        window.location.href="reproductor.html"
+        window.location.href="/paginas/reproductor.html"
     }
 });

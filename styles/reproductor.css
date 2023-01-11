@@ -123,6 +123,7 @@ h1 {
     color: white;
     display: inline-block;
     margin:0.3rem;
+    padding-bottom: 1.2rem;
 }
 
 .card_info{

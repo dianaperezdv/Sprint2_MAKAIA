@@ -64,6 +64,6 @@ document.addEventListener("click", (event) => {
     const { target } = event;
     if(target.classList.contains("video_miniatura")){
         sessionStorage.setItem("videoPlayer", JSON.stringify(target.id));
-        window.location.href = "reproductor.html";
+        window.location.href = "/paginas/reproductor.html";
     }
     });
