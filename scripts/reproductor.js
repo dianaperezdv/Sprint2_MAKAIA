@@ -1,4 +1,4 @@
-import { videos } from "./data/data.js"
+import { videos } from "../data/data.js"
 
 document.getElementById('reproductor').src="";
 
@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded',()=>{
 document.addEventListener("click", (event) => {
     const { target } = event;
     if(target.classList.contains("img-logo")){
-    window.location.href = "./index.html";
+    window.location.href = "../index.html";
     }
 });
 document.addEventListener("click",(event)=>{
     const {target} = event;
     if(target.classList.contains("card_miniatura")){
         sessionStorage.setItem("videoPlayer",JSON.stringify(target.id));
-        window.location.href="./paginas/reproductor.html"
+        window.location.href="../paginas/reproductor.html"
     }
 });
